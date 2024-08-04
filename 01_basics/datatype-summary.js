@@ -46,5 +46,24 @@ console.log(typeof heroes); //object
 console.log(typeof myObj); //object
 console.log(typeof myFunction); //function also called as function object
 
+// Stack Memory(Primitive), Heap(Non-Primitive)
+let myName = "Ashutosh"
+let anotherName = myName
+anotherName = "Sahu"
+
+console.log(myName); // Ashutosh
+console.log(anotherName); // Sahu
+
+let userOne = {
+    email : "ashutoshsahu@gmail.com",
+    age : 26
+}
+
+let userTwo = userOne
+
+userTwo.email = "ashutosh@gmail.com"
+
+console.log(userOne); //{ email: 'ashutosh@gmail.com', age: 26 }
+console.log(userTwo); //{ email: 'ashutosh@gmail.com', age: 26 }
 
 
